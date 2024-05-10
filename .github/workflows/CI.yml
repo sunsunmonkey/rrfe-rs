@@ -248,7 +248,7 @@ jobs:
           node-version: ${{ matrix.node }}
           
       - name: Install dependencies
-        run: npm i pnpm -g &&  pnpm install
+        run: npm i pnpm -g && pnpm install
       - name: Download artifacts
         uses: actions/download-artifact@v4
         with:

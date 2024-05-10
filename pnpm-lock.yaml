@@ -15,6 +15,49 @@ importers:
         specifier: ^6.0.1
         version: 6.1.3
 
+  crates/binding:
+    devDependencies:
+      '@napi-rs/cli':
+        specifier: ^2.18.3
+        version: 2.18.3
+      ava:
+        specifier: ^6.0.1
+        version: 6.1.3
+
+  npm/android-arm-eabi: {}
+
+  npm/android-arm64: {}
+
+  npm/darwin-arm64: {}
+
+  npm/darwin-universal: {}
+
+  npm/darwin-x64: {}
+
+  npm/freebsd-x64: {}
+
+  npm/linux-arm-gnueabihf: {}
+
+  npm/linux-arm-musleabihf: {}
+
+  npm/linux-arm64-gnu: {}
+
+  npm/linux-arm64-musl: {}
+
+  npm/linux-riscv64-gnu: {}
+
+  npm/linux-x64-gnu: {}
+
+  npm/linux-x64-musl: {}
+
+  npm/win32-arm64-msvc: {}
+
+  npm/win32-ia32-msvc: {}
+
+  npm/win32-x64-msvc: {}
+
+  packages/create-rrfe: {}
+
 packages:
 
   '@mapbox/node-pre-gyp@1.0.11':
