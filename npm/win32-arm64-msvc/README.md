@@ -1,3 +1,3 @@
-# `rrfe-rs-bindings-win32-arm64-msvc`
+# `@rrfe/binding-win32-arm64-msvc`
 
-This is the **aarch64-pc-windows-msvc** binary for `rrfe-rs-bindings`
+This is the **aarch64-pc-windows-msvc** binary for `@rrfe/binding`

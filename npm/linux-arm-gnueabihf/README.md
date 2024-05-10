@@ -1,3 +1,3 @@
-# `rrfe-rs-bindings-linux-arm-gnueabihf`
+# `@rrfe/binding-linux-arm-gnueabihf`
 
-This is the **armv7-unknown-linux-gnueabihf** binary for `rrfe-rs-bindings`
+This is the **armv7-unknown-linux-gnueabihf** binary for `@rrfe/binding`

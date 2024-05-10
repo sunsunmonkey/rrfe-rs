@@ -1,5 +1,5 @@
 {
-  "name": "rrfe-rs-bindings-linux-x64-gnu",
+  "name": "@rrfe/binding-linux-x64-gnu",
   "version": "0.0.0",
   "os": [
     "linux"
@@ -7,10 +7,11 @@
   "cpu": [
     "x64"
   ],
-  "main": "rrfe-rs-bindings.linux-x64-gnu.node",
+  "main": "binding.linux-x64-gnu.node",
   "files": [
-    "rrfe-rs-bindings.linux-x64-gnu.node"
+    "binding.linux-x64-gnu.node"
   ],
+  "description": "rrfe napi binding",
   "license": "MIT",
   "engines": {
     "node": ">= 10"

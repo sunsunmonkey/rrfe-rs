@@ -1,5 +1,5 @@
 {
-  "name": "rrfe-rs-bindings-linux-arm64-musl",
+  "name": "@rrfe/binding-linux-arm64-musl",
   "version": "0.0.0",
   "os": [
     "linux"
@@ -7,10 +7,11 @@
   "cpu": [
     "arm64"
   ],
-  "main": "rrfe-rs-bindings.linux-arm64-musl.node",
+  "main": "binding.linux-arm64-musl.node",
   "files": [
-    "rrfe-rs-bindings.linux-arm64-musl.node"
+    "binding.linux-arm64-musl.node"
   ],
+  "description": "rrfe napi binding",
   "license": "MIT",
   "engines": {
     "node": ">= 10"

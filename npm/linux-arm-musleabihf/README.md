@@ -1,3 +1,3 @@
-# `rrfe-rs-bindings-linux-arm-musleabihf`
+# `@rrfe/binding-linux-arm-musleabihf`
 
-This is the **armv7-unknown-linux-musleabihf** binary for `rrfe-rs-bindings`
+This is the **armv7-unknown-linux-musleabihf** binary for `@rrfe/binding`

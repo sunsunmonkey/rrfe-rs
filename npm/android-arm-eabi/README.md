@@ -1,3 +1,3 @@
-# `rrfe-rs-bindings-android-arm-eabi`
+# `@rrfe/binding-android-arm-eabi`
 
-This is the **armv7-linux-androideabi** binary for `rrfe-rs-bindings`
+This is the **armv7-linux-androideabi** binary for `@rrfe/binding`

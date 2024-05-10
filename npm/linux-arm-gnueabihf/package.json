@@ -1,5 +1,5 @@
 {
-  "name": "rrfe-rs-bindings-linux-arm-gnueabihf",
+  "name": "@rrfe/binding-linux-arm-gnueabihf",
   "version": "0.0.0",
   "os": [
     "linux"
@@ -7,10 +7,11 @@
   "cpu": [
     "arm"
   ],
-  "main": "rrfe-rs-bindings.linux-arm-gnueabihf.node",
+  "main": "binding.linux-arm-gnueabihf.node",
   "files": [
-    "rrfe-rs-bindings.linux-arm-gnueabihf.node"
+    "binding.linux-arm-gnueabihf.node"
   ],
+  "description": "rrfe napi binding",
   "license": "MIT",
   "engines": {
     "node": ">= 10"

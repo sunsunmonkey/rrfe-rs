@@ -1,3 +1,3 @@
-# `rrfe-rs-bindings-darwin-universal`
+# `@rrfe/binding-darwin-universal`
 
-This is the **universal-apple-darwin** binary for `rrfe-rs-bindings`
+This is the **universal-apple-darwin** binary for `@rrfe/binding`

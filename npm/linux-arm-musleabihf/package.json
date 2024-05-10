@@ -1,5 +1,5 @@
 {
-  "name": "rrfe-rs-bindings-linux-arm-musleabihf",
+  "name": "@rrfe/binding-linux-arm-musleabihf",
   "version": "0.0.0",
   "os": [
     "linux"
@@ -7,10 +7,11 @@
   "cpu": [
     "arm"
   ],
-  "main": "rrfe-rs-bindings.linux-arm-musleabihf.node",
+  "main": "binding.linux-arm-musleabihf.node",
   "files": [
-    "rrfe-rs-bindings.linux-arm-musleabihf.node"
+    "binding.linux-arm-musleabihf.node"
   ],
+  "description": "rrfe napi binding",
   "license": "MIT",
   "engines": {
     "node": ">= 10"

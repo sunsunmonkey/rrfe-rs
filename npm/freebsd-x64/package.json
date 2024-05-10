@@ -1,5 +1,5 @@
 {
-  "name": "rrfe-rs-bindings-freebsd-x64",
+  "name": "@rrfe/binding-freebsd-x64",
   "version": "0.0.0",
   "os": [
     "freebsd"
@@ -7,10 +7,11 @@
   "cpu": [
     "x64"
   ],
-  "main": "rrfe-rs-bindings.freebsd-x64.node",
+  "main": "binding.freebsd-x64.node",
   "files": [
-    "rrfe-rs-bindings.freebsd-x64.node"
+    "binding.freebsd-x64.node"
   ],
+  "description": "rrfe napi binding",
   "license": "MIT",
   "engines": {
     "node": ">= 10"

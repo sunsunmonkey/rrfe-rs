@@ -1,13 +1,14 @@
 {
-  "name": "rrfe-rs-bindings-darwin-universal",
+  "name": "@rrfe/binding-darwin-universal",
   "version": "0.0.0",
   "os": [
     "darwin"
   ],
-  "main": "rrfe-rs-bindings.darwin-universal.node",
+  "main": "binding.darwin-universal.node",
   "files": [
-    "rrfe-rs-bindings.darwin-universal.node"
+    "binding.darwin-universal.node"
   ],
+  "description": "rrfe napi binding",
   "license": "MIT",
   "engines": {
     "node": ">= 10"

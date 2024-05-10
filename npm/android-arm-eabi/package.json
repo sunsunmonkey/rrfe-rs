@@ -1,5 +1,5 @@
 {
-  "name": "rrfe-rs-bindings-android-arm-eabi",
+  "name": "@rrfe/binding-android-arm-eabi",
   "version": "0.0.0",
   "os": [
     "android"
@@ -7,10 +7,11 @@
   "cpu": [
     "arm"
   ],
-  "main": "rrfe-rs-bindings.android-arm-eabi.node",
+  "main": "binding.android-arm-eabi.node",
   "files": [
-    "rrfe-rs-bindings.android-arm-eabi.node"
+    "binding.android-arm-eabi.node"
   ],
+  "description": "rrfe napi binding",
   "license": "MIT",
   "engines": {
     "node": ">= 10"
