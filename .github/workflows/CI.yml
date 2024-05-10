@@ -121,7 +121,7 @@ jobs:
         run: pnpm config set supportedArchitectures.cpu "ia32"
         shell: bash
       - name: Install dependencies
-        run: pnpm install
+        run: npm i pnpm -g &&  pnpm install
       - name: Setup node x86
         uses: actions/setup-node@v4
         if: matrix.settings.target == 'i686-pc-windows-msvc'
@@ -218,7 +218,7 @@ jobs:
           
           architecture: x64
       - name: Install dependencies
-        run: pnpm install
+        run: npm i pnpm -g &&  pnpm install
       - name: Download artifacts
         uses: actions/download-artifact@v4
         with:
@@ -248,7 +248,7 @@ jobs:
           node-version: ${{ matrix.node }}
           
       - name: Install dependencies
-        run: pnpm install
+        run: npm i pnpm -g &&  pnpm install
       - name: Download artifacts
         uses: actions/download-artifact@v4
         with:
@@ -416,7 +416,7 @@ jobs:
           node-version: 20
           
       - name: Install dependencies
-        run: pnpm install
+        run: npm i pnpm -g &&  pnpm install
       - name: Download macOS x64 artifact
         uses: actions/download-artifact@v4
         with:
@@ -455,7 +455,7 @@ jobs:
           node-version: 20
           
       - name: Install dependencies
-        run: pnpm install
+        run: npm i pnpm -g &&  pnpm install
       - name: Download all artifacts
         uses: actions/download-artifact@v4
         with:
