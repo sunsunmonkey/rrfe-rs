@@ -11,5 +11,6 @@
     "artifacts": "napi artifacts",
     "build": "pnpm --filter @rrfe/binding run build",
     "build:debug": "pnpm --filter @rrfe/binding run build:debug"
-  }
+  },
+  "packageManager": "pnpm@9.0.6"
 }
