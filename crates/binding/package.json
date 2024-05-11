@@ -5,23 +5,7 @@
   "types": "index.d.ts",
   "napi": {
     "name": "binding",
-    "triples": {
-      "additional": [
-        "aarch64-apple-darwin",
-        "aarch64-linux-android",
-        "aarch64-unknown-linux-gnu",
-        "aarch64-unknown-linux-musl",
-        "aarch64-pc-windows-msvc",
-        "armv7-unknown-linux-gnueabihf",
-        "armv7-unknown-linux-musleabihf",
-        "x86_64-unknown-linux-musl",
-        "x86_64-unknown-freebsd",
-        "i686-pc-windows-msvc",
-        "armv7-linux-androideabi",
-        "universal-apple-darwin",
-        "riscv64gc-unknown-linux-gnu"
-      ]
-    }
+    "triples": {}
   },
   "license": "MIT",
   "devDependencies": {
@@ -36,30 +20,11 @@
   },
   "scripts": {
     "artifacts": "napi artifacts",
-    "build": "napi build  --platform --release",
-    "build:debug": "napi build  --platform",
+    "build": "napi build --platform --release",
+    "build:debug": "napi build --platform",
     "prepublishOnly": "napi prepublish -t npm",
     "test": "ava",
     "universal": "napi universal",
     "version": "napi version"
-  },
-  "optionalDependencies": {
-    "@rrfe/binding-win32-x64-msvc": "0.0.0",
-    "@rrfe/binding-darwin-x64": "0.0.0",
-    "@rrfe/binding-linux-x64-gnu": "0.0.0",
-    "@rrfe/binding-darwin-arm64": "0.0.0",
-    "@rrfe/binding-android-arm64": "0.0.0",
-    "@rrfe/binding-linux-arm64-gnu": "0.0.0",
-    "@rrfe/binding-linux-arm64-musl": "0.0.0",
-    "@rrfe/binding-win32-arm64-msvc": "0.0.0",
-    "@rrfe/binding-linux-arm-gnueabihf": "0.0.0",
-    "@rrfe/binding-linux-arm-musleabihf": "0.0.0",
-    "@rrfe/binding-linux-x64-musl": "0.0.0",
-    "@rrfe/binding-freebsd-x64": "0.0.0",
-    "@rrfe/binding-win32-ia32-msvc": "0.0.0",
-    "@rrfe/binding-android-arm-eabi": "0.0.0",
-    "@rrfe/binding-darwin-universal": "0.0.0",
-    "@rrfe/binding-linux-riscv64-gnu": "0.0.0"
-  },
-  "description": "rrfe napi binding"
+  }
 }
