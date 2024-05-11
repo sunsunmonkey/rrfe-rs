@@ -65,8 +65,6 @@ jobs:
             target: aarch64-pc-windows-msvc
             build: pnpm build --target aarch64-pc-windows-msvc
           - host: ubuntu-latest
-            target: wasm32-wasip1-threads
-            build: pnpm build --target wasm32-wasip1-threads
     name: stable - ${{ matrix.settings.target }} - node@20
     runs-on: ${{ matrix.settings.host }}
     steps:
@@ -116,19 +114,12 @@ jobs:
         shell: bash
       - name: Upload artifact
         uses: actions/upload-artifact@v4
-        if: matrix.settings.target != 'wasm32-wasip1-threads'
+        if: matrix.settings.target 
         with:
           name: bindings-${{ matrix.settings.target }}
           path: "*.node"
           if-no-files-found: error
 
-      - name: Upload artifact
-        uses: actions/upload-artifact@v4
-        if: matrix.settings.target == 'wasm32-wasip1-threads'
-        with:
-          name: bindings-${{ matrix.settings.target }}
-          path: "*.wasm"
-          if-no-files-found: error
   build-freebsd:
     runs-on: macos-13
     name: Build FreeBSD
@@ -174,7 +165,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: bindings-freebsd
-          path: ${{ env.APP_NAME }}.*.node
+          path: crates/binding/${{ env.APP_NAME }}.*.node
           if-no-files-found: error
   test-macOS-windows-binding:
     name: Test bindings on ${{ matrix.settings.target }} - node@${{ matrix.node }}
@@ -305,9 +296,6 @@ jobs:
         run: pnpm install
       - name: Download artifacts
         uses: actions/download-artifact@v4
-        with:
-          name: bindings-wasm32-wasip1-threads
-          path: .
       - name: List packages
         run: ls -R .
         shell: bash
