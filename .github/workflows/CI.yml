@@ -1,7 +1,7 @@
 name: CI
 env:
   DEBUG: napi:*
-  APP_NAME: package-template
+  APP_NAME: binding
   MACOSX_DEPLOYMENT_TARGET: '10.13'
 permissions:
   contents: write
@@ -89,7 +89,7 @@ jobs:
         if: matrix.settings.target 
         with:
           name: bindings-${{ matrix.settings.target }}
-          path: "*.node"
+          path: crates/binding/${{ env.APP_NAME }}.*.node
           if-no-files-found: error
 
   build-freebsd:
